@@ -1,0 +1,76 @@
+.homePage {
+    width: 100vw;
+    height: auto;
+    margin-top: 3.5%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgba(164, 0, 0, 0.694), black);
+}
+
+.photo {
+    width: 60vw;
+    /* height: 233px; */
+    /* margin-top: 3vw; */
+}
+
+.photo img {
+    width: 60vw;
+}
+
+.details {
+    margin: 5px;
+    padding: 5px;
+    width: 40vw;
+}
+
+.details h1 {
+    color: rgb(255, 255, 255);
+}
+
+#about_me {
+    background: #8fe3ee;
+    color: black;
+    border: solid 1px green;
+    border-radius: 20px 0px 20px 0px;
+    box-shadow: -6px 7px rgb(59, 59, 59);
+    margin-top: 20px;
+    padding: 5px;
+    width: 30vw;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.socialMedia {
+    margin-top: 10vh;
+    display: flex;
+    /* align-items: baseline; */
+    justify-content: space-evenly;
+
+}
+
+.logo {
+    width: 4vw;
+}
+
+.logo img {
+    width: 4vw;
+}
+
+.projects {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgb(74, 74, 74);
+}
+
+.card-img-top {
+    width: 250px;
+    height: 150px;
+    margin-left: 15px;
+}
