@@ -13,3 +13,8 @@
     display: flex;
     justify-content: center;
 }
+
+.navLink ul li {
+    text-decoration: none;
+    color: white;
+}
