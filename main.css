@@ -10,7 +10,6 @@
 .photo {
     width: 60vw;
     border-radius: 0 0 100px 0;
-    background: linear-gradient(white, black);
 }
 
 .photo img {
@@ -18,7 +17,7 @@
 }
 
 .details {
-    margin: 5px;
+    margin: 5vh 2vh 2vh 2vh;
     padding: 5px;
     width: 40vw;
 }
@@ -27,26 +26,10 @@
     color: rgb(255, 255, 255);
 }
 
-#about_me {
-    background: #8fe3ee;
-    color: black;
-    border: solid 1px green;
-    border-radius: 20px 0px 20px 0px;
-    box-shadow: -6px 7px rgb(59, 59, 59);
-    margin-top: 20px;
-    padding: 5px;
-    width: 30vw;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
 .socialMedia {
-    margin-top: 10vh;
+    margin-top: 5vh;
     display: flex;
-    /* align-items: baseline; */
     justify-content: space-evenly;
-
 }
 
 .logo {
@@ -57,19 +40,52 @@
     width: 4vw;
 }
 
+#mail a {
+    font-size: 15px;
+    margin-left: 3%;
+    font-weight: 200;
+    text-decoration: none;
+    color: #3595f6;
+}
+
+#mail {
+    width: 40vw;
+    margin-top: 30px;
+    display: flex;
+}
+
+#mailLink :hover {
+    font-size: 20px;
+}
+
 .info {
     width: 100vw;
     height: 60vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 #hi {
+    width: 40vw;
     text-align: center;
-    background: linear-gradient(to right, #eee, #545454);
+    background: linear-gradient(to right, #ffffff, #313131);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+#about_me {
+    width: 50vw;
+    margin-top: 50px;
+    background: linear-gradient(to right, #ffffff, #515050);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#project-heading {
+    margin-left: 60px;
+    margin-bottom: 30px;
 }
 
 .projects {
@@ -78,14 +94,48 @@
     justify-content: space-evenly;
 }
 
-.card {
-    padding: 10px;
+.card1 {
+    width: 19vw;
     border-radius: 25px;
-    background-color: rgb(74, 74, 74);
+    background-color: rgb(255, 255, 255);
+}
+
+.card2 {
+    width: 19vw;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+}
+
+.card3 {
+    width: 19vw;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+}
+
+.card3 .card-img-top {
+    background-color: #2d2d2d;
+}
+
+.card4 {
+    width: 19vw;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
 }
 
 .card-img-top {
-    width: 250px;
-    height: 150px;
-    margin-left: 15px;
+    width: 100%;
+    height: 200px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    color: red;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #000000;
 }

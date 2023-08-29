@@ -1,6 +1,7 @@
 .footer {
     width: 100vw;
-    height: 20vh;
+    height: 25vh;
+    margin-top: 10vh;
     background-color: rgb(0, 0, 0);
 }
 
