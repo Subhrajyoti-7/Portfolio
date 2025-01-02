@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(
+        -177deg,
+        #000000,
+        #141414,
+        #1f1f1f,
+        #373737,
+        #1f1f1f,
+        #1f1f1f,
+        #101010
+    );
+    color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+.navbar {
+    width: 100%;
+    top: 25px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 96%;
+    border-radius: 20px;
+    backdrop-filter: blur(7px);
+    background: rgba(57, 165, 232, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #22bdff;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #f5f5f5;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #22bdff;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+    background: linear-gradient(160deg, #2a2a2a, #121212);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h1 {
+    background: linear-gradient(#ffffff, #5a5a5a);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.name {
+    background: linear-gradient(to bottom right, #29d9bf, #14b4f8);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    margin: 1rem 0 2rem;
+    animation: fadeIn 2s ease-in-out;
+    text-shadow: #ffdc9196 0px 0px 30px;
+}
+
+.container {
+    display: flex;
+}
+
+.sticky {
+    position: relative;
+
+    transition: transform 0.3s ease-out;
+}
+
+.hero a {
+    font-size: 2rem;
+    font-family: "Lobster", serif;
+    color: #22bdff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.hero a:hover {
+    color: #1985ff;
+}
+
+.profile {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid rgb(203, 203, 203);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.717);
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    /* color: #22bdff; */
+    color: #9fccde;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: #1e1e1e;
+    /* padding: 1.5rem; */
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.skill-card {
+    background: #1e1e1e;
+    margin: 0.5rem;
+    padding: 2rem 1.5rem 1rem 1.5rem;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+}
+
+.project-info {
+    margin: 1.5rem;
+}
+
+.project-card:hover,
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Add initial hidden state */
+.project-card,
+.skill-card {
+    opacity: 0;
+    transform: translateY(50px); /* Start slightly below */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Animation when in view */
+.in-view {
+    opacity: 1;
+    transform: translateY(0); /* Reset position */
+}
+
+.project-card h3,
+.skill-card h3 {
+    margin-bottom: 1rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem;
+    text-align: left;
+    gap: 15px;
+}
+
+.about {
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #0d0d0d;
+    color: #a8a8a8;
+}
