@@ -86,6 +86,14 @@ header nav ul li a:hover {
     animation: fadeInDown 1.5s ease-in-out;
 }
 
+.hero h2 {
+    font-size: 3rem;
+    color: #bdbdbd;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
 .name {
     background: linear-gradient(to bottom right, #29d9bf, #14b4f8);
     background-clip: text;
@@ -243,6 +251,7 @@ header nav ul li a:hover {
     max-width: 800px;
     margin: 0 auto;
     animation: fadeIn 1.5s ease-in-out;
+    text-align: justify;
     /* background-color: rgba(58, 161, 235, 0.717);
     box-shadow: 0px 0px 30px rgba(58, 161, 235, 0.717); */
 }
