@@ -373,8 +373,8 @@ footer {
     }
 
     .hero img {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
 
     .hero-text h1 {
@@ -398,19 +398,19 @@ footer {
     }
     .hero {
         padding-top: 50px;
-        height: 70vh;
+        height: 80vh;
     }
     .hero img {
         margin-top: 40px;
     }
     .hero-text h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .hero-text h2 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .hero-text p {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .hero-text a {
