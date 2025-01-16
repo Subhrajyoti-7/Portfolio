@@ -18,8 +18,9 @@ menu.onclick = () => {
     menu.style.display = 'none';
 };
 
-window.onclick = () => {
-    if (menu.style.display === 'block') {
-        menu.style.display = 'none';
-    }
-};
+//Not working, TO DO
+// window.onclick = () => {
+//     if (menu.style.display === 'block') {
+//         menu.style.display = 'none';
+//     }
+// };
