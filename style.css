@@ -322,6 +322,14 @@ header nav ul li a:hover {
     box-shadow: 0px 0px 30px rgba(58, 161, 235, 0.717); */
 }
 
+#lp {
+    display: block;
+}
+
+#mb {
+    display: none;
+}
+
 footer {
     text-align: center;
     padding: 1rem;
@@ -418,5 +426,12 @@ footer {
     }
     .contact p {
         font-size: 0.8rem;
+    }
+    #lp {
+        display: none;
+    }
+
+    #mb {
+        display: block;
     }
 }
